@@ -1,0 +1,302 @@
+body {
+    font-family: Calibri, sans-serif;
+    font-size: large;
+}
+header {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    border: 1px solid black;
+    z-index: 10;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    top: 0px;
+    left: 0px;
+
+}
+
+ul.menyul {
+    margin: 30px auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+li.menyli {
+    color: white;
+    font-family: Cambria, Georgia, serif;
+    font-size: 30px;
+    font-weight: 250;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 80%;
+    display: inline;
+    padding: 60px;
+    text-align: center;
+}
+
+a.kontoLink:link {color: white; text-decoration: none;}
+a.kontoLink:visited {color: white; text-decoration: none;}
+a.kontoLink:hover {color: white; text-decoration: none;}
+a.kontoLink:active {color: white; text-decoration: none;}
+
+a.kalenderLink:link {color: white; text-decoration: none;}
+a.kalenderLink:visited {color: white; text-decoration: none;}
+a.kalenderLink:hover {color: white; text-decoration: none;}
+a.kalenderLink:active {color: white; text-decoration: none;}
+
+a.fagLink:link {color: white; text-decoration: none;}
+a.fagLink:visited {color: white; text-decoration: none;}
+a.fagLink:hover {color: white; text-decoration: none;}
+a.fagLink:active {color: white; text-decoration: none;}
+
+a.meldingerLink:link {color: white; text-decoration: none;}
+a.meldingerLink:visited {color: white; text-decoration: none;}
+a.meldingerLink:hover {color: white; text-decoration: none;}
+a.meldingerLink:active {color: white; text-decoration: none;}
+
+
+.main {
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 150px;
+    border: solid 2px black;
+    width: auto;
+    height: auto;
+    background-color: #dddddd;
+}
+
+
+.ramme-grid {
+    display: grid;
+    grid-template-columns: 600px 200px;
+    margin-left: 30px;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+
+}
+.infoTekst{
+    text-align: center;
+}
+.nyttDenneUka {
+    border: solid 1px black;
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nyttDenneUka ul {
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.nyttDenneUka p {
+    text-align: justify;
+}
+.lekser {
+    border: solid 2px black;
+    height: 402px;
+    width: auto;
+    margin-left: 70px;
+
+    background-color: #cccccc;
+}
+.lekser li {
+    border-bottom: solid 1px black;
+}
+.kommentarfelt {
+    border: solid 2px black;
+    width: 740px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.lærerMelding {
+    background-color: lightslategray;
+    border: solid 2px black;
+    text-align: right;
+    padding-right: 30px;
+}
+.studentMelding {
+    border: solid 1px gray;
+    background-color: lightgray;
+}
+
+
+ h1, h2, h3, h4, h5.txtMidt{
+    text-align: center;
+}
+ol, ul.midtTxt {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        margin: 120px 0 0;
+        border: solid 2px black;
+        width: 100%;
+        height: auto;
+        background-color: #dddddd;
+        padding-right: 50px;
+    }
+    .H2-H3-H4-Tekst {
+        text-align: center;
+        margin-left: 50px;
+    }
+
+
+    .ramme-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 30px;
+        grid-column-gap: 40px;
+        grid-row-gap: 30px;
+
+    }
+    .infoTekst{
+        text-align: center;
+        margin-left: 50px;
+    }
+    .nyttDenneUka {
+        border: solid 1px black;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nyttDenneUka ul {
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+    }
+
+    .nyttDenneUka p {
+        text-align: justify;
+    }
+    .lekser {
+        border: solid 2px black;
+        height: 402px;
+        width: 100%;
+        margin-left: 30px;
+        background-color: #cccccc;
+    }
+    .lekser li {
+        border-bottom: solid 1px black;
+    }
+    .kommentarfelt {
+        border: solid 2px black;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+    .lærerMelding {
+        background-color: lightslategray;
+        border: solid 2px black;
+        text-align: right;
+        padding-right: 30px;
+    }
+    .studentMelding {
+        border: solid 1px gray;
+        background-color: lightgray;
+    }
+
+
+    h1, h2, h3, h4, h5.txtMidt{
+        text-align: center;
+    }
+    ol, ul.midtTxt {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main {
+        margin: 120px 0 0;
+        border: solid 2px black;
+        width: 300px;
+        height: auto;
+        background-color: #dddddd;
+        padding-right: 50px;
+    }
+    .H2-H3-H4-Tekst {
+        text-align: center;
+        margin-left: 50px;
+    }
+    .ramme-grid {
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+    }
+    .infoTekst{
+        text-align: center;
+        margin-left: 50px;
+    }
+    .nyttDenneUka {
+        border: solid 1px black;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nyttDenneUka ul {
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+    }
+
+    .nyttDenneUka p {
+        text-align: start;
+    }
+    .lekser {
+        border: solid 2px black;
+        height: 402px;
+        width: 100%;
+        margin-left: 30px;
+        background-color: #cccccc;
+    }
+    .lekser li {
+        border-bottom: solid 1px black;
+    }
+    .kommentarfelt {
+        border: solid 2px black;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+    .lærerMelding {
+        background-color: lightslategray;
+        border: solid 2px black;
+        text-align: right;
+        padding-right: 30px;
+    }
+    .studentMelding {
+        border: solid 1px gray;
+        background-color: lightgray;
+    }
+
+    .litenH2 {
+        font-size: 18px;
+    }
+    h1, h2, h3, h4, h5.txtMidt{
+        text-align: center;
+    }
+    ol, ul.midtTxt {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
