@@ -1,0 +1,138 @@
+header {
+   width: 100%;
+   position: fixed;
+   background-color: black;
+   border: 1px solid black;
+   z-index: 10;
+   padding-top: 0px;
+   margin-top: 0px;
+   margin-left: 0px;
+   top: 0px;
+   left: 0px;
+
+}
+
+ul.menyul {
+   margin: 30px auto;
+   padding: 0 10px;
+   text-align: center;
+}
+
+li.menyli {
+   color: white;
+   font-family: Cambria, Georgia, serif;
+   font-size: 30px;
+   font-weight: 250;
+   text-transform: uppercase;
+   display: inline-block;
+   width: 80%;
+   display: inline;
+   padding: 60px;
+   text-align: center;
+}
+
+a.kontoLink:link {color: white; text-decoration: none;}
+a.kontoLink:visited {color: white; text-decoration: none;}
+a.kontoLink:hover {color: white; text-decoration: none;}
+a.kontoLink:active {color: white; text-decoration: none;}
+
+a.kalenderLink:link {color: white; text-decoration: none;}
+a.kalenderLink:visited {color: white; text-decoration: none;}
+a.kalenderLink:hover {color: white; text-decoration: none;}
+a.kalenderLink:active {color: white; text-decoration: none;}
+
+a.fagLink:link {color: white; text-decoration: none;}
+a.fagLink:visited {color: white; text-decoration: none;}
+a.fagLink:hover {color: white; text-decoration: none;}
+a.fagLink:active {color: white; text-decoration: none;}
+
+a.meldingerLink:link {color: white; text-decoration: none;}
+a.meldingerLink:visited {color: white; text-decoration: none;}
+a.meldingerLink:hover {color: white; text-decoration: none;}
+a.meldingerLink:active {color: white; text-decoration: none;}
+
+a.hjemLink:link {color: white; text-decoration: none;}
+a.hjemLink:visited {color: white; text-decoration: none;}
+a.hjemLink:hover {color: white; text-decoration: none;}
+a.hjemLink:active {color: white; text-decoration: none;}
+
+
+.main1 {
+   margin-top: 120px;
+   margin-left: 175px;
+   border: solid 3px black;
+   width: 950px;
+   height: auto;
+   background-color: #dddddd;
+}
+.ramme1 {
+   display: grid;
+   grid-template-columns: 600px 200px;
+   margin-left: 30px;
+   grid-column-gap: 40px;
+   grid-row-gap: 30px;
+
+}
+.innhold1 {
+   border: solid 3px black;
+   width: 142%;
+   height: auto;
+   margin-bottom: 30px;
+   padding: 10px; 
+    
+}
+.innhold1 p {
+   text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 200px;
+    height: 200px; 
+}
+form {
+    text-align: center; 
+}
+
+h1, h2, h3, h4, h5.txtMidt, p{
+   text-align: center;
+}
+h2 {
+    text-decoration: underline; 
+}
+ol, ul.midtTxt {
+   width: 30%;
+   margin: auto;
+   margin-bottom: 20px;
+}
+@media only screen and (max-width: 1000px){
+   li.menyli {
+   color: white;
+   font-family: Cambria, Georgia, serif;
+   font-size: 30px;
+   font-weight: 250;
+   text-transform: uppercase;
+   display: inline-block;
+   width: 75%;
+   display: inline;
+   padding: 20px;
+   text-align: center;
+}
+    .main1 {
+   margin-top: 150px;
+   margin-left: 50px;
+   border: solid 3px black;
+   width: 850px;
+   height: auto;
+   background-color: #dddddd;
+}
+.ramme1 {
+   display: grid;
+   grid-template-columns: 535px 200px;
+   margin-left: 30px;
+   grid-column-gap: 40px;
+   grid-row-gap: 30px;
+
+}
+}
