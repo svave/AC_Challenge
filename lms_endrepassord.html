@@ -2,22 +2,54 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Accessibility challenge</title>
-   <link rel="stylesheet" type="text/css" href="AC_homepageCS.css">
+   <title>Konto_endrepassord</title>
+   <link rel="stylesheet" type="text/css" href="lms_konto.css">
+   <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<div id="meny">
+<div class="meny">
    <header>
        <ul class="menyul">
            <li class="menyli"><a class="hjemLink" href="lms_hjem.html">Hjem</a></li>
            <li class="menyli"><a class="kontoLink" href="lms_konto.html">Konto</a></li>
-           <li class="menyli"><a class="kalenderLink" href="lms_kalender.html">Kalender</a></li>
+           <li class="menyli"><a class="kalenderLink" href="lms_kalender1.html">Kalender</a></li>
            <li class="menyli"><a class="fagLink" href="lms_fag.html">Fag</a></li>
            <li class="menyli"><a class="meldingerLink" href="lms_meldinger.html">Meldinger</a></li>
        </ul>
    </header>
 </div>
+
+	<script>
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		window.onclick = function(event) {
+			if (!event.target.matches('.menybtn')) {
+
+				var dropdowns = document.getElementsByClassName("mobmeny-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
+	
+	<div class="menyMob">
+		<button onclick="myFunction()" class="menybtn">Meny</button>
+		<div id="myDropdown" class="mobmeny-content">
+			<a class="hjemLink" href="lms_hjem.html">Hjem</a>
+			<a class="kontoLink" href="lms_konto.html">Konto</a>
+			<a class="kalenderLink" href="lms_kalender1.html">Kalender</a>
+			<a class="fagLink" href="lms_fag.html">Fag</a>
+			<a class="meldingerLink" href="lms_meldinger.html">Meldinger</a>
+		</div>
+	</div>
 
    <div class="main1">
         <h2>Min konto</h2>
@@ -32,13 +64,13 @@
          <br><br>
          Gjenta nytt passord: <input type="password" name="GPassord" placeholder="Gjenta passord">
          <br><br>
-         <input type="button" onclick="myFunction()" value="Bytt passord">
+         <input type="button" onclick="endrePassord()" value="Bytt passord">
          <br>
          <p id="ut"></p>
         </form>
             <script>
                 
-            function myFunction(){
+            function endrePassord(){
                 document.getElementById("ut").innerHTML = "Du har endret passordet ditt"; 
             }
             

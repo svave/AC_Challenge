@@ -2,34 +2,62 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Accessibility challenge</title>
-   <link rel="stylesheet" type="text/css" href="main.css">
+   <title>Fag</title>
+   <link rel="stylesheet" type="text/css" href="lms_fag.css">
+   <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<div id="meny">
+ <div class="meny">
    <header>
        <ul class="menyul">
-            <li class="menyli"><a class="Hjemlink" href="AC_homepage.html">Hjem</a></li>
+            <li class="menyli"><a class="hjemLink" href="lms_hjem.html">Hjem</a></li>
            <li class="menyli"><a class="kontoLink" href="lms_konto.html">Konto</a></li>
-           <li class="menyli"><a class="kalenderLink" href="lms_kalender.html">Kalender</a></li>
+           <li class="menyli"><a class="kalenderLink" href="lms_kalender1.html">Kalender</a></li>
            <li class="menyli"><a class="fagLink" href="lms_fag.html">Fag</a></li>
            <li class="menyli"><a class="meldingerLink" href="lms_meldinger.html">Meldinger</a></li>
        </ul>
    </header>
 </div>
 
-        
-<div id="TheNav1">
-<a href="Matte.html">Matte</a>
-<a href="Norsk.html">Norsk</a>
-<a href="Naturfag.html">Naturfag</a>
-<a href="Samfunn.html">Samfunnsfag</a>
-<a href="Gym.html">Gym</a>
-</div>    
+<script>
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
 
-    <h1 id="H10">På denne siden finner du fagene dine samt mer info slik som lekse innleveringer med mer.<br>
+		window.onclick = function(event) {
+			if (!event.target.matches('.menybtn')) {
+
+				var dropdowns = document.getElementsByClassName("mobmeny-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+</script>
+	
+	<div class="menyMob">
+		<button onclick="myFunction()" class="menybtn">Meny</button>
+		<div id="myDropdown" class="mobmeny-content">
+			<a class="hjemLink" href="lms_hjem.html">Hjem</a>
+			<a class="kontoLink" href="lms_konto.html">Konto</a>
+			<a class="kalenderLink" href="lms_kalender1.html">Kalender</a>
+			<a class="fagLink" href="lms_fag.html">Fag</a>
+			<a class="meldingerLink" href="lms_meldinger.html">Meldinger</a>
+		</div>
+	</div>
+         
+<div id="TheNav1">
+	<a href="matte.html">Matte</a>
+	<a href="norsk.html">Norsk</a>
+	<a href="naturfag.html">Naturfag</a>
+	<a href="samfunnsfag.html">Samfunnsfag</a>
+	<a href="gym.html">Gym</a>
+</div>    
+     <h1 id="H10">På denne siden finner du fagene dine samt mer info slik som lekse innleveringer med mer.<br>
     Klikk på de forskjellige fagene for å sjekke dette ut!</h1>
-    
-    </body>
-</html>
+</body>
+</html> 
