@@ -61,7 +61,7 @@
 	 #TheNav{
 		height: 100%;
 		width: 100px;
-		margin-top: 89px;
+		margin-top: 49px;
 		margin-left: -8px;
 		position: fixed;
 		background: black;
@@ -94,7 +94,7 @@
 	 #TheNav1{
 		height: 100%;
 		width: 100px;
-		margin-top: 89px;
+		margin-top: 49px;
 		margin-left: -8px;
 		position: fixed;
 		background: black;
@@ -117,8 +117,8 @@
 	}
 
 	 .main {
-		margin-top: 100px;
-		margin-left: 100px;
+		margin-top: 5%;
+		margin-left: 9%;
 		margin-right: 150px;
 		border: solid 2px black;
 		width: auto;
@@ -154,11 +154,17 @@
 		border: solid 2px black;
 		height: 402px;
 		width: auto;
-		margin-left: 70px;
+        text-align: left;
+        position: relative;
+		margin-left: -5%;
 		background-color: #cccccc;
 	}
 	 .lekser li {
 		border-bottom: solid 1px black;
+         text-align: left;
+         white-space: nowrap;
+         right: 110%;
+         position: relative;
 	}
 	 .kommentarfelt {
 		border: solid 2px black;
